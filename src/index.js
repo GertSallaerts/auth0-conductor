@@ -9,7 +9,7 @@ if (jwt && jwt.state) {
     let dest = target.protocol || window.location.protocol;
 
     // Get our destination from JWT state, can't do fallback to current here
-    dest += '//' + target.hostname + target.pathname + target.search;
+    dest += '//' + target.host + target.pathname + target.search;
 
     // Use current hash for destination (it has the auth0 response)
     dest += window.location.hash;
