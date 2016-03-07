@@ -26,7 +26,6 @@
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-stage-2": "^6.3.13",
     "html-webpack-plugin": "^2.7.1",
-    "js-base64": "^2.1.9",
     "qs": "^6.0.2",
     "webpack": "^1.12.12"
   }

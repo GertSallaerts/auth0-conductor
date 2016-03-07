@@ -1,12 +1,11 @@
 "use strict";
 
 import qs from 'qs';
-import { Base64 } from 'js-base64';
 
 export
 function decode(jwt) {
     var encoded = jwt && jwt.split('.')[1];
-    return JSON.parse(Base64.decode(encoded));
+    return JSON.parse(atob(encoded));
 }
 
 export default
