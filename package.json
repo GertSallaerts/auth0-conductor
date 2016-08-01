@@ -1,6 +1,6 @@
 {
   "name": "auth0-conductor",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Redirect app for consolidated auth0 callback URL's",
   "scripts": {
     "build": "webpack",

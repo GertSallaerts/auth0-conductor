@@ -11,7 +11,11 @@ Redirect from Auth0's callback to where you really want to go. If you have a lot
 ```js
 {
     callbackURL: [location of your hosted index.html],
-    state: JSON.stringify(document.location)
+    state: JSON.stringify({
+        location: document.location
+        // add any properties you need for your own app here, they will
+        // be passed through
+    })
 }
 ```
 

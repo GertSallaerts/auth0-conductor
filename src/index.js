@@ -3,7 +3,7 @@ import parse from './jwt';
 const jwt = parse(window.location.hash);
 
 if (jwt && jwt.state) {
-    const target = jwt.state;
+    const target = jwt.state.location ? jwt.state.location : jwt.state;
 
     // Use target protocol or fallback to current protocol
     let dest = target.protocol || window.location.protocol;
